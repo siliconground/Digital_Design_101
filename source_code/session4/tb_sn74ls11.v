@@ -14,8 +14,9 @@ SN74LS11 DUT(.in_1A(in_1A), .in_2A(in_2A), .in_3A(in_3A),
 		 	);
 // Dumpfile Gen
 initial begin
-	$dumpfile("./sn74ls11.vcd");
-	$dumpvars(0, sn74ls11);	
+	$dumpfile("sn74ls11.vcd"); // any name for .vcd dumpfile
+	//$dumpvars(0); // all vars in DUT instance	
+	$dumpvars(1, DUT); // dump designated module
 end
 
 // Applying stimulus

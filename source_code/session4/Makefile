@@ -2,6 +2,9 @@ clean:
 	rm -rf xcelium.d *.log *.history *.key
 	rm -rf worklib cds.lib hdl.var
 	rm -rf *.lib *.shm
+	rm -rf xrun*
+	rm -rf *vcd *trn *dsn
+	rm -rf .simvision
 set:
 	mkdir ./worklib
 	touch ./cds.lib
@@ -22,8 +25,12 @@ elab:
 	echo "----------End of Elaboration----------"
 
 sim: 
-	echo "----------Simulation in GUI mode----------"
-	xmsim -MESS tb_sn74ls11 -gui
+	echo "----------Simulation in vcd mode----------"
+	xmsim -MESS tb_sn74ls11
 	echo "----------End of Simulation + Start GUI"
 
-all: clean set compile elab sim
+result:	
+	echo "----------Simulation in GUI mode----------"
+	simvision *.vcd
+	echo "----------Start GUI-----------------------"
+all: clean set compile elab sim result
