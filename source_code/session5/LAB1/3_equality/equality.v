@@ -9,7 +9,7 @@ initial begin
     
 	foo = 'b101x; bar = 'b1011;
     $display("Logical result for foo(%0b) === bar(%0b) : %0d", foo, bar, foo === bar);
-    $display("Logical result for foo(%0b) === bar(%0b) : %0d", foo, bar, foo == bar);
+    $display("Logical result for foo(%0b) == bar(%0b) : %0d", foo, bar, foo == bar);
     
 	foo = 'b101x; bar = 'b101x;
     $display("Logical result for foo(%0b) === bar(%0b) : %0d", foo, bar, foo === bar);

@@ -1,0 +1,11 @@
+xmvlog(64): 24.03-s005: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xmvlog(64)	24.03-s005: Started on Apr 08, 2026 at 22:38:02 KST
+xmvlog
+    -MESS
+    -linedebug
+    ./bitwise.v
+
+file: ./bitwise.v
+	module worklib.bitwise
+		errors: 0, warnings: 0
+TOOL:	xmvlog(64)	24.03-s005: Exiting on Apr 08, 2026 at 22:38:02 KST  (total: 00:00:00)

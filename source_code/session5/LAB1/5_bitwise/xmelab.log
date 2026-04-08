@@ -1,0 +1,20 @@
+xmelab(64): 24.03-s005: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xmelab(64)	24.03-s005: Started on Apr 08, 2026 at 22:38:02 KST
+xmelab
+    -MESS
+    -access rwc
+    bitwise
+
+	Elaborating the design hierarchy:
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.bitwise:module <0x36f6972e>
+			streams:   1, words:  8786
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		         Instances  Unique
+		Modules:         1       1
+		Initial blocks:  1       1
+	Writing initial simulation snapshot: worklib.bitwise:module
+TOOL:	xmelab(64)	24.03-s005: Exiting on Apr 08, 2026 at 22:38:02 KST  (total: 00:00:00)

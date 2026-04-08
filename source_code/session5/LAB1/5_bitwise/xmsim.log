@@ -1,0 +1,26 @@
+xmsim(64): 24.03-s005: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xmsim(64)	24.03-s005: Started on Apr 08, 2026 at 22:38:02 KST
+xmsim
+    -MESS
+    bitwise
+
+Loading snapshot worklib.bitwise:module .................... Done
+xcelium> run
+ ~4'b0001	= 1110
+ ~4'bx001	= x110
+ ~4'bz001	= x110
+ 4'b0001 & 4'b1001 = 0001
+ 4'b1001 & 4'bx001 = x001
+ 4'b1001 & 4'bz001 = x001
+ 4'b0001 | 4'b1001 = 1001
+ 4'b0001 | 4'b1001 = 1001
+ 4'b0001 | 4'b1001 = 1001
+ 4'b0001 ^ 4'b1001 = 1000
+ 4'b0001 ^ 4'b1001 = 1000
+ 4'b0001 ^ 4'b1001 = 1000
+ 4'b0001 ~^ 4'b1001 = 0111
+ 4'b0001 ~^ 4'b1001 = 0111
+ 4'b0001 ~^ 4'b1001 = 0111
+xmsim: *W,RNQUIE: Simulation is complete.
+xcelium> exit
+TOOL:	xmsim(64)	24.03-s005: Exiting on Apr 08, 2026 at 22:38:02 KST  (total: 00:00:00)
